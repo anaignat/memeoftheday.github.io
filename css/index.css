@@ -58,7 +58,7 @@ margin: 0 auto;
     text-decoration: none;
 }
 
-a {
+a, a:link, a:visited, a:hover {
     color:white;
     text-decoration: none;
 }
