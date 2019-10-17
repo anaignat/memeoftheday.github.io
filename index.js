@@ -8,15 +8,15 @@ function img(){
     var today = Math.ceil((new Date().getTime())/86400000);
     var dayOfYear = today-firstJan;
 
-    var bgdImage;
+    var dailyMeme;
     if((dayOfYear+'').length == 1)
-    bgdImage = './memes/'+ 00'+dayOfYear+'.mp4';
+    dailyMeme = './memes/+'00'+dayOfYear+'.mp4';
     else if((dayOfYear+'').length == 2)
-    bgdImage = '0'+dayOfYear+'.mp4';
+    dailyMeme = '0'+dayOfYear+'.mp4';
     else
-    bgdImage = dayOfYear+'.jpg';
+    dailyMeme = dayOfYear+'.jpg';
 
-    document.getElementById('meme').src = bgdImage;
+    dailyMeme = document.getElementById('meme').src;
 
 }
 </script>
