@@ -5,21 +5,48 @@
 
     <head>
         <link rel="stylesheet" href="./css/index.css" tpe="text/css" />
-        <script type="text/javascript" src="index.js"></script>
+        <!-- <script type="text/javascript"></script> -->
         <title>Meme of the Day</title>
 
         <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap" rel="stylesheet">
 
     </head>
 
-    <body style="background-color:black;">
+    <body style="background-color:black;" onLoad="renderTime()" >
+
         <h1 class = "center" >MEME OF THE DAY</h1>
-	<!-- <img class = "meme" src="./memes/letters.jpg" alt="richard madden bodyguard" >-->
-	<video width="25%" height ="25%" class = "vid" controls autoplay>
-		<source id="meme" src= "./memes/000.mp4" type="video/mp4">
-	</video>
-        <!-- <a href="https://github.com/anaignat/anaignat.github.io" target="_blank"><img class = "git" src="./pics/GitHub_Logo_White.png" alt="github"  > </a> -->
-	<p class= 'cred'> <a href="https://github.com/anaignat/anaignat.github.io" target="_blank">made by ana</a> </p>
+        
+        <script>
+
+            var myDate = newDate();
+            var month = myDate.getMonth();
+            var dayNum = myDate.getDate();
+            var monthArray = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}
+            var displayDate = document.getElementID("date");
+            displayDate.textContent = "" + monthArray[month] + " " + dayNum + "th";
+            displayDate.innerHTML = "" + monthArray[month] + " " + dayNum + "th";
+
+        </script>
+
+         <p id = "date"  > Date </p>
+
+        <!-- <img class = "meme" src="./memes/letters.jpg" alt="richard madden bodyguard" >-->
+        <video width="25%" height ="25%" class = "vid" controls autoplay>
+
+            <source id="meme" src= "" type="video/mp4">
+            
+            <script>
+                var a = new Date();
+                var dateToday = a.getDate();
+                var source = '/memes/' + dateToday + '.mp4';
+                // window.alert(source);
+                document.getElementById('meme').src = source;
+            </script>
+
+        </video>
+            <!-- <a href="https://github.com/anaignat/anaignat.github.io" target="_blank"><img class = "git" src="./pics/GitHub_Logo_White.png" alt="github"  > </a> -->
+        <p class= 'cred'> <a href="https://github.com/anaignat/anaignat.github.io" target="_blank">made by ana</a> </p>
+   
     </body>
 
 </html>

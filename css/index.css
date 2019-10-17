@@ -2,7 +2,7 @@
 h1 {
     font-size: 70px;
     padding: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: white;
@@ -14,6 +14,17 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
+}
+
+#date {
+
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: white;
 
 }
 
