@@ -16,7 +16,7 @@ function img(){
     else
     bgdImage = dayOfYear+'.jpg';
 
-    document.getElementById('bla').src = bgdImage;
+    document.getElementById('meme').src = bgdImage;
 
 }
 </script>
@@ -24,7 +24,7 @@ function img(){
 </head>
 <body onload="javascript:img();">
 
-<img id="bla" width="100%" height="100%" />
+<img id="meme" width="100%" height="100%" />
 
 </body>
 </html>
