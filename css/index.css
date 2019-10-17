@@ -3,6 +3,7 @@ h1 {
     font-size: 70px;
     padding: 50px;
     padding-bottom: 0px;
+    margin-bottom: 0px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: white;
@@ -19,9 +20,8 @@ h1 {
 
 #date {
 
-    font-size: 30px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+    font-size: 20px;
+    padding: 0px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: white;
@@ -42,8 +42,9 @@ h1 {
 
 .vid {
 	
-display: block;
-margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
 
 }
 

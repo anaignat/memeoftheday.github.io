@@ -16,21 +16,20 @@
 
         <h1 class = "center" >MEME OF THE DAY</h1>
         
+        <p id = "date"> hi </p>
+
         <script>
 
-            var myDate = newDate();
-            var month = myDate.getMonth();
-            var dayNum = myDate.getDate();
-            var monthArray = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}
-            var displayDate = document.getElementID("date");
-            displayDate.textContent = "" + monthArray[month] + " " + dayNum + "th";
-            displayDate.innerHTML = "" + monthArray[month] + " " + dayNum + "th";
+            var date =  new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var day = date.getDate();
+            var monthString = monthArray[month];
+            document.getElementById("date").innerHTML = monthString + " " + day + "th " + year;
 
         </script>
 
-         <p id = "date"  > Date </p>
-
-        <!-- <img class = "meme" src="./memes/letters.jpg" alt="richard madden bodyguard" >-->
         <video width="25%" height ="25%" class = "vid" controls autoplay>
 
             <source id="meme" src= "" type="video/mp4">
@@ -44,9 +43,10 @@
             </script>
 
         </video>
-            <!-- <a href="https://github.com/anaignat/anaignat.github.io" target="_blank"><img class = "git" src="./pics/GitHub_Logo_White.png" alt="github"  > </a> -->
+           <!--<a href="https://github.com/anaignat/anaignat.github.io" target="_blank"><img class = "git" src="./pics/GitHub_Logo_White.png" alt="github"  > </a> -->
+        
         <p class= 'cred'> <a href="https://github.com/anaignat/anaignat.github.io" target="_blank">made by ana</a> </p>
-   
+        
     </body>
 
 </html>
