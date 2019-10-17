@@ -10,7 +10,7 @@ function img(){
 
     var bgdImage;
     if((dayOfYear+'').length == 1)
-    bgdImage = '00'+dayOfYear+'.mp4';
+    bgdImage = './memes/'+ 00'+dayOfYear+'.mp4';
     else if((dayOfYear+'').length == 2)
     bgdImage = '0'+dayOfYear+'.mp4';
     else
